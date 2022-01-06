@@ -2,16 +2,14 @@
 
 # Portfolio: Mobile version skeleton
 
-The goal of this milestone is to create the sections of my portfolio website.
+The goal of this milestone is to create the **skeleton of my portfolio website**.
+![Skeleton_5](https://user-images.githubusercontent.com/88809610/148444045-65446881-85c5-466f-a910-75df8159c222.png)
 
 
 his feature has  a homepage with:
-- A logo
 - A menu
 - The content
-- A contact form
-- And some social media to stay in touch
-- Others sections
+- a button to collaborate
 
 ## Built With
 
