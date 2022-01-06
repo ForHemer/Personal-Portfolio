@@ -1,13 +1,12 @@
 @font-face {
-    font-family: 'PlayfairDisplay';
-    src: url(Playfair_Display/PlayfairDisplay-VariableFont_wght.ttf);
-  }
+  font-family: 'PlayfairDisplay';
+  src: url(Playfair_Display/PlayfairDisplay-VariableFont_wght.ttf);
+}
 
-  @font-face {
-    font-family: 'Poppins';
-    src: url(Poppins/Poppins-Regular.ttf);
-  }
-
+@font-face {
+  font-family: 'Poppins';
+  src: url(Poppins/Poppins-Regular.ttf);
+}
 
 * {
   box-sizing: border-box;
@@ -15,81 +14,80 @@
   padding: 0;
 }
 
-
-
 .mobile-menu {
   cursor: pointer;
 }
 
 header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-right: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: 16px;
 }
 
 h1 {
-    font-family: 'PlayfairDisplay';
-    font-size: 50px;
-    line-height: 50px;
-    font-weight: 400;
-    font-style: normal;
-    margin: 30px 84px 20px 16px;
-    color: #1a2236
+  font-family: 'PlayfairDisplay', sans-serif;
+  font-size: 50px;
+  line-height: 50px;
+  font-weight: 400;
+  font-style: normal;
+  margin: 30px 84px 20px 16px;
+  color: #1a2236;
 }
 
 p {
-    font-family: Poppins;
-    /*width: 330px;*/
-    font-size: 14px;
-    font-weight: normal;
-    font-style: normal;
-    line-height: 21px;
-    color: #1a2236;
-  }
-  
-  #introduction > p {
-    margin: 20px 16px 0px 16px;
-  }
-  
-  button {
-    font-family: Poppins;
-    font-weight: 500;
-    font-style: normal;
-    font-size: 16px;
-    line-height: 24px;
-    text-align: center;
-    cursor: pointer;
-  }
-  
-  #introduction-button {
-      margin: 40px 16px 32.31px 16px ;
-      width: 92%;/*330px;*/
-      height: 50px;
-      background-color: #1A2236;
-      color: #fff;
-      cursor: pointer;
-  }
-  
-  #introduction-button:hover {
-    background-color: #fff;
-    border: 1px solid #1A2236;
-    color: #1a2236;
-    font-size: 18px;
-    line-height: 27px;
-  }
-  
-  #introduction-button:active {
-    background-color: #fff;
-    border: 2px solid #1A2236;
-    color: #1a2236;
-    font-size: 18px;
-    line-height: 27px;
-  }
-  
-  #introduction > img {
-      width: 100%;
-      height: auto;
-    }
-  
-    /* ==End of Introduction section== */  
+  font-family: Poppins, sans-serif;
+
+  /* width: 330px; */
+  font-size: 14px;
+  font-weight: normal;
+  font-style: normal;
+  line-height: 21px;
+  color: #1a2236;
+}
+
+#introduction > p {
+  margin: 20px 16px 0 16px;
+}
+
+button {
+  font-family: Poppins, sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  cursor: pointer;
+}
+
+#introduction-button {
+  margin: 40px 16px 32.31px 16px;
+  width: 92%;/* 330px; */
+  height: 50px;
+  background-color: #1a2236;
+  color: #fff;
+  cursor: pointer;
+}
+
+#introduction-button:hover {
+  background-color: #fff;
+  border: 1px solid #1a2236;
+  color: #1a2236;
+  font-size: 18px;
+  line-height: 27px;
+}
+
+#introduction-button:active {
+  background-color: #fff;
+  border: 2px solid #1a2236;
+  color: #1a2236;
+  font-size: 18px;
+  line-height: 27px;
+}
+
+#introduction > img {
+  width: 100%;
+  height: auto;
+}
+
+/* ==End of Introduction section== */
