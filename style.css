@@ -27,8 +27,6 @@ header {
 
 main {
   display: grid;
-  width: 100%;
-  height: auto;
 }
 
 h1 {
@@ -107,6 +105,11 @@ button {
 
 /* ==Beginning of Projects section== */
 
+#projects {
+  display: flex;
+  flex-direction: column;
+}
+
 #projects > h2 {
   margin-left: 16px;
   margin-top: 40px;
@@ -175,6 +178,30 @@ button {
   cursor: pointer;
 }
 
+#about button {
+  margin: 32px 16px 0 16px;
+  height: 50px;
+  background-color: #1a2236;
+  color: #fff;
+  cursor: pointer;
+}
+
+#projects button:hover {
+  background-color: #fff;
+  border: 1px solid #1a2236;
+  color: #1a2236;
+  font-size: 18px;
+  line-height: 27px;
+}
+
+#projects button:active {
+  background-color: #fff;
+  border: 2px solid #1a2236;
+  color: #1a2236;
+  font-size: 18px;
+  line-height: 27px;
+}
+
 #projects .arrow-right {
   width: 20px;
   height: 15px;
@@ -198,13 +225,20 @@ button {
   margin: 20px 16px 0 16px;
 }
 
-#about button {
-  margin: 32px 16px 0 16px;
-  width: 92%;
-  height: 50px;
-  background-color: #1a2236;
-  color: #fff;
-  cursor: pointer;
+#about button:hover {
+  background-color: #fff;
+  border: 1px solid #1a2236;
+  color: #1a2236;
+  font-size: 18px;
+  line-height: 27px;
+}
+
+#about button:active {
+  background-color: #fff;
+  border: 2px solid #1a2236;
+  color: #1a2236;
+  font-size: 18px;
+  line-height: 27px;
 }
 
 #about .arrow-download {
@@ -214,8 +248,12 @@ button {
 }
 
 #about #Languages {
-  position: relative;
+  display: flex;
+  flex-direction: column;
   background-color: #1c528a;
+  background-image: url("images/diese.png");
+  background-repeat: no-repeat;
+  background-position: bottom right;
   margin: 40px 16px 0 16px;
   height: 300px;
 }
@@ -247,42 +285,28 @@ button {
   letter-spacing: -0.0525em;
 }
 
-#about #img-languages {
-  width: 102px;
-  height: 102px;
-  position: absolute;
-  top: 198px;
-  right: 0;
-}
-
-#Frameworks {
+#about #Frameworks {
+  display: flex;
+  flex-direction: column;
   position: relative;
   background-color: #e2505c;
+  background-image: url("images/ic_framework.svg");
+  background-repeat: no-repeat;
+  background-position: bottom right;
   margin: 16px 16px 0 16px;
   height: 300px;
 }
 
-#about #img-frameworks {
-  width: 102px;
-  height: 102px;
-  position: absolute;
-  top: 198px;
-  right: 0;
-}
-
-#Skills {
+#about #Skills {
+  display: flex;
+  flex-direction: column;
   position: relative;
   background-color: #febf52;
+  background-image: url("images/ic_skills.svg");
+  background-repeat: no-repeat;
+  background-position: bottom right;
   margin: 16px 16px 50px 16px;
   height: 300px;
-}
-
-#about #img-skills {
-  width: 102px;
-  height: 102px;
-  position: absolute;
-  top: 198px;
-  right: 0;
 }
 
 /* ==End of About section== */
