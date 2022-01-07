@@ -25,6 +25,10 @@ header {
   margin-right: 16px;
 }
 
+main {
+  display: grid;
+}
+
 h1 {
   font-family: 'PlayfairDisplay', sans-serif;
   font-size: 50px;
@@ -35,10 +39,17 @@ h1 {
   color: #1a2236;
 }
 
+h2 {
+  font-family: 'PlayfairDisplay', sans-serif;
+  font-size: 50px;
+  line-height: 50px;
+  font-weight: 400;
+  font-style: normal;
+  color: #1a2236;
+}
+
 p {
   font-family: Poppins, sans-serif;
-
-  /* width: 330px; */
   font-size: 14px;
   font-weight: normal;
   font-style: normal;
@@ -62,7 +73,7 @@ button {
 
 #introduction-button {
   margin: 40px 16px 32.31px 16px;
-  width: 92%;/* 330px; */
+  width: 92%;
   height: 50px;
   background-color: #1a2236;
   color: #fff;
@@ -91,3 +102,211 @@ button {
 }
 
 /* ==End of Introduction section== */
+
+/* ==Beginning of Projects section== */
+
+#projects {
+  display: flex;
+  flex-direction: column;
+}
+
+#projects > h2 {
+  margin-left: 16px;
+  margin-top: 40px;
+  margin-bottom: 32px;
+}
+
+#projects .project-name {
+  background-color: #1a2236;
+  width: 100%;
+  height: 156px;
+  margin-top: -6px;
+}
+
+#projects .project-division > img {
+  width: 100%;
+  height: auto;
+}
+
+#projects h4 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 20px;
+  line-height: 80%;
+  font-weight: 300;
+  font-style: normal;
+  color: #fff;
+  padding: 20px 36px 16px 20px;
+}
+
+#projects ul {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  margin-left: 20px;
+}
+
+#projects ul li {
+  color: #1a2236;
+  background-color: #98dede;
+  font-family: 'Poppins', sans-serif;
+  font-size: 10.33px;
+  height: 20px;
+  margin-right: 10px;
+  text-align: center;
+  padding: 2.8px;
+}
+
+#projects ul .html-css {
+  width: 69px;
+}
+
+#projects ul .ruby {
+  width: 87px;
+}
+
+#projects ul .javascript {
+  width: 74px;
+}
+
+#projects button {
+  margin: 20px 122px 20px 20px;
+  width: 178px;
+  height: 44px;
+  background-color: #1a2236;
+  border: 1px solid #fff;
+  color: #fff;
+  cursor: pointer;
+}
+
+#about button {
+  margin: 32px 16px 0 16px;
+  height: 50px;
+  background-color: #1a2236;
+  color: #fff;
+  cursor: pointer;
+}
+
+#projects button:hover {
+  background-color: #fff;
+  border: 1px solid #1a2236;
+  color: #1a2236;
+  font-size: 18px;
+  line-height: 27px;
+}
+
+#about button:hover {
+  background-color: #fff;
+  border: 1px solid #1a2236;
+  color: #1a2236;
+  font-size: 18px;
+  line-height: 27px;
+}
+
+#projects button:active {
+  background-color: #fff;
+  border: 2px solid #1a2236;
+  color: #1a2236;
+  font-size: 18px;
+  line-height: 27px;
+}
+
+#projects .arrow-right {
+  width: 20px;
+  height: 15px;
+  margin-left: 18px;
+  color: #fff;
+}
+
+/* ==End of Projects section== */
+
+/* ==Beginning of About section== */
+#about {
+  display: grid;
+  padding-top: 56px;
+}
+
+#about > h2 {
+  margin-left: 16px;
+}
+
+#about > p {
+  margin: 20px 16px 0 16px;
+}
+
+#about button:active {
+  background-color: #fff;
+  border: 2px solid #1a2236;
+  color: #1a2236;
+  font-size: 18px;
+  line-height: 27px;
+}
+
+#about .arrow-download {
+  width: 24px;
+  height: 18px;
+  margin-left: 20px;
+}
+
+#about #Languages {
+  display: flex;
+  flex-direction: column;
+  background-color: #1c528a;
+  background-image: url("images/diese.png");
+  background-repeat: no-repeat;
+  background-position: bottom right;
+  margin: 40px 16px 0 16px;
+  height: 300px;
+}
+
+#about h3 {
+  color: #fff;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 30px;
+  margin-top: 50px;
+  margin-left: 50px;
+}
+
+#about ul {
+  margin-top: 21px;
+  margin-left: 50px;
+  list-style-position: inside;
+}
+
+#about ul li {
+  color: #fff;
+  font-family: Poppins, sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 27px;
+  letter-spacing: -0.0525em;
+}
+
+#about #Frameworks {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  background-color: #e2505c;
+  background-image: url("images/ic_framework.svg");
+  background-repeat: no-repeat;
+  background-position: bottom right;
+  margin: 16px 16px 0 16px;
+  height: 300px;
+}
+
+#about #Skills {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  background-color: #febf52;
+  background-image: url("images/ic_skills.svg");
+  background-repeat: no-repeat;
+  background-position: bottom right;
+  margin: 16px 16px 50px 16px;
+  height: 300px;
+}
+
+/* ==End of About section== */
