@@ -194,6 +194,14 @@ button {
   line-height: 27px;
 }
 
+#about button:hover {
+  background-color: #fff;
+  border: 1px solid #1a2236;
+  color: #1a2236;
+  font-size: 18px;
+  line-height: 27px;
+}
+
 #projects button:active {
   background-color: #fff;
   border: 2px solid #1a2236;
