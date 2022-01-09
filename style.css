@@ -330,7 +330,6 @@ button {
 
 #get-started > form {
   display: grid;
-  /*flex-direction: column;*/
   gap: 8px;
 }
 
