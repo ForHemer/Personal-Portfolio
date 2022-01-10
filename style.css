@@ -138,14 +138,21 @@ button {
   padding: 20px 36px 16px 20px;
 }
 
+/* 
 #projects ul {
   display: flex;
   flex-direction: row;
   list-style-type: none;
   margin-left: 20px;
+} */
+
+#projects ul {
+  list-style: none;
+  margin-left: 20px;
 }
 
 #projects ul li {
+  float: left;
   color: #1a2236;
   background-color: #98dede;
   font-family: 'Poppins', sans-serif;
