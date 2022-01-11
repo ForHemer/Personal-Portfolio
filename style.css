@@ -324,24 +324,27 @@ button {
 
 /* ==Beginning of Get Started section== */
 #get-started {
-  display: flex;
   background-color: #f9f9fa;
+}
+
+#get-started .container {
+  display: flex;
   height: 813px;
   flex-direction: column;
   justify-content: center;
 }
 
-#get-started > h2 {
+#get-started .container > h2 {
   margin-left: 18px;
   margin-top: 32px;
   margin-bottom: 20px;
 }
 
-#get-started > p {
+#get-started .container > p {
   margin: 20px 14px 32px 18px;
 }
 
-#get-started > form {
+#get-started .container > form {
   display: grid;
   gap: 8px;
 }
