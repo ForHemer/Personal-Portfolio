@@ -349,6 +349,16 @@ button {
   gap: 8px;
 }
 
+
+input,
+textarea {
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 21px;
+}
+
 input {
   margin-left: 18px;
   margin-right: 14px;
@@ -368,11 +378,6 @@ textarea {
   border: 1px solid #dfdfe0;
   background-color: #fff;
   border-radius: 4px;
-  font-family: Poppins, sans-serif;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 21px;
   color: #7d7c84;
   resize: none;
 }
