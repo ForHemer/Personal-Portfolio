@@ -4,6 +4,7 @@
 
 /* Styles */
 
+/* All viewports */
 * {
   box-sizing: border-box;
   padding: 0;
@@ -314,7 +315,6 @@ body {
 }
 
 /* Contact section */
-
 #contact_section {
   background-image: url(img/image_geometry_3.svg);
   background-repeat: no-repeat;
