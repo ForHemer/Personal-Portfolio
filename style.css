@@ -192,10 +192,6 @@ body {
   color: #1a2236;
 }
 
-.tech_box .box_item {
-  list-style: none;
-}
-
 .about_text {
   font-family: Poppins, sans-serif;
   font-size: 14px;
@@ -300,6 +296,10 @@ body {
 .box_item {
   list-style: inside;
   color: #fff;
+}
+
+.tech_box .box_item {
+  list-style: none;
 }
 
 .box_item span {
@@ -577,14 +577,6 @@ body {
     transform: rotate(-90deg);
   }
 
-  /* Aucun effet sur le projet
-  .project {
-    margin: 0;
-    padding: 0;
-    top: 0;
-    bottom: 0;
-  }*/
-
   .project_btn {
     background-color: #e5e5e5;
     color: #1a2236;
@@ -603,54 +595,34 @@ body {
     border: 2px solid #fff;
   }
 
-  /*.project_img {
-    width: 100%;
-  }*/
-
-  /*Important pour afficher le cadre avec le cadre avec ordinateur zoranj plum*/
   .project1 {
     grid-column: 3 / 7;
     margin-left: 0;
     height: 585px;
   }
 
-  /*Important pour afficher le premier projet*/
   .project1 .project_img {
     height: 50%;
     object-fit: cover;
     object-position: top;
   }
 
-  /* N'affecte pas le projet
-  .project1 .project_body {
-    height: 50%;
-  } */
-
-  /*Styliser le titre du grand cadre noir */
   .project1 .project_name {
     font-size: 60px;
     line-height: 48px;
     font-weight: 700;
   }
 
-  /*Augmenter le size du libelle des langages de programmation du grand cadre noir*/
   .project1 .project_language {
     font-size: 20px;
     line-height: 16px;
   }
 
-  /*Positionner les libelles du grand cadre noir*/
   .project1 .project_languages {
     margin-top: 34px;
     font-weight: 300;
   }
 
-  /* Aucun effet sur le projet
-   .project .project_btn {
-    margin-top: 60px;
-  } */
-
-  /*Placez le Mac bookPro*/
   .project2 {
     grid-column: 1 / 3;
     grid-row: 2 / 3;
@@ -658,12 +630,10 @@ body {
     position: relative;
   }
 
-  /*Cacher le contenu accompagnant le cadre precedent*/
   .project2 .project_body {
     display: none;
   }
 
-  /*Positionner le mac bookpro*/
   .project2 .project_img {
     min-height: 80%;
     position: absolute;
