@@ -47,6 +47,32 @@ body {
   font-size: 50px;
 }
 
+/* Animation Headline */
+.headline {
+  animation-duration: 3s;
+  animation-name: slidein;
+}
+
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+
+  75% {
+    font-size: 300%;
+    margin-left: 25%;
+    width: 150%;
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+
+
+
 .headline_description {
   font-family: Poppins, sans-serif;
   margin-top: 20px;
@@ -75,9 +101,12 @@ body {
   background-color: #e5e5e5;
   border: 1px solid #1a2236;
   cursor: pointer;
+  box-shadow: 0 10px 0 #b2b3b4;
 }
 
 .headline_btn:active {
+  box-shadow: 0 2px 0 #b2b3b4;
+  transform: translateY(3px);
   color: #1a2236;
   background-color: #e5e5e5;
   border: 2px solid #1a2236;
@@ -396,12 +425,13 @@ body {
   padding: 13px;
   border: 1px solid #1a2236;
 }
-
+  
 .contact_btn:hover {
   color: #1a2236;
   background-color: #e5e5e5;
   border: 1px solid #1a2236;
   cursor: pointer;
+  box-shadow: 0 10px 0 #b2b3b4;
 }
 
 .contact_btn:active {
@@ -409,6 +439,8 @@ body {
   background-color: #e5e5e5;
   border: 2px solid #1a2236;
   cursor: pointer;
+  box-shadow: 0 2px 0 #b2b3b4;
+  transform: translateY(3px);
 }
 
 .contact_footer {
