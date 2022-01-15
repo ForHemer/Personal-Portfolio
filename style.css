@@ -849,7 +849,7 @@ body {
   /* footer */
 
   .contact_footer {
-    margin-top: 0px;
+    margin-top: 0;
     width: 100vw;
     display: flex;
     justify-content: space-between;
