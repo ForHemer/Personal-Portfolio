@@ -415,7 +415,7 @@ body {
   background-color: #1a2236;
   margin-top: 64px;
   width: 320px;
-  height: 150px;
+  height: 70px;
 }
 
 .resume {
@@ -790,9 +790,9 @@ body {
   /* Contact section */
 
   #contact_section {
-    background-image: url(img/contact_img.svg);
-    background-repeat: no-repeat;
-    background-position: top left;
+    background-image: url(img/contact_img.svg), url(img/desktop_image-geometry_7.svg);
+    background-repeat: no-repeat, no-repeat;
+    background-position: top left, bottom right;
     margin-top: 158px;
     padding-top: 168px;
     display: flex;
@@ -800,6 +800,7 @@ body {
     align-items: center;
     flex-direction: column;
     width: 100vw;
+    height: 1000px;
   }
 
   .contact_title {
@@ -848,12 +849,11 @@ body {
   /* footer */
 
   .contact_footer {
-    margin-top: 132px;
+    margin-top: 0px;
     width: 100vw;
     display: flex;
     justify-content: space-between;
     align-items: baseline;
-    padding-top: 40px;
   }
 
   .footer_icons {
