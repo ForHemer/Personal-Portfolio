@@ -45,14 +45,11 @@ body {
   font-family: "Playfair Display", serif;
   margin-left: 16px;
   font-size: 50px;
-}
-
-/* Animation Headline */
-.headline {
   animation-duration: 3s;
   animation-name: slidein;
 }
 
+/* Animation Headline */
 @keyframes slidein {
   from {
     margin-left: 100%;
@@ -70,8 +67,6 @@ body {
     width: 100%;
   }
 }
-
-
 
 .headline_description {
   font-family: Poppins, sans-serif;
@@ -425,7 +420,7 @@ body {
   padding: 13px;
   border: 1px solid #1a2236;
 }
-  
+
 .contact_btn:hover {
   color: #1a2236;
   background-color: #e5e5e5;
