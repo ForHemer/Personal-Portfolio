@@ -2,7 +2,7 @@
 
 # Portfolio: Project's section
 
-The goal of this milestone is to add project's section to my **my portfolio website** in addition to introduction's section.
+This is my **responsive Portfolio Website**. Leave some comments to help me improve it.
 ![Skeleton_5](https://user-images.githubusercontent.com/88809610/148444045-65446881-85c5-466f-a910-75df8159c222.png)
 ![Skeleton_5_Project1](https://user-images.githubusercontent.com/88809610/148462065-31532aa2-fe70-4bd2-84d5-989aef9d484b.png)
 ![Skeleton_5_Project4](https://user-images.githubusercontent.com/88809610/148462427-bd75a7de-b859-4b76-83f0-6432155f9b4d.png)
