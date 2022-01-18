@@ -14,6 +14,9 @@ The goal of this milestone is to add project's section to my **my portfolio webs
 -HTML
 -CSS
 
+## Live Demo
+
+[Live Demo Link](https://forhemer.github.io/Personal-Portfolio/)
 ## Authors
 
 👤 **Hemerson Foreste**
