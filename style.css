@@ -1436,7 +1436,7 @@ button {
     border: 1px solid #dfdfe0;
     background-color: #fff;
     border-radius: 4px;
-    color: #7d7c84;
+    /* color: #7d7c84; */
     resize: none;
   }
 
