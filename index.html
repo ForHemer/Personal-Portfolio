@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <meta charset="UTF-8" />
   <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-E1H5NCJW1Q"></script>
 <script>
@@ -9,12 +10,11 @@
   gtag('js', new Date());
 
   gtag('config', 'G-E1H5NCJW1Q');
-</script>
-
-  <meta charset="UTF-8" />
+</script>  
   <meta name="viewport" content="width=device-width, initial-1">
   <meta name="description" content="This page present the Hemerson's portfolio">
   <meta name="Author" content="Hemerson Foreste">
+  <!-- <script src="script.js"></script> -->
   <link rel="stylesheet" type="text/css" href="style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"/>
   <title> Hemerson's Portfolio</title>
@@ -22,14 +22,24 @@
 <body> 
   <header>
     <img class="img-header mobile-version" src="images/image_geometry_1.svg" alt="image_geometry">
+    
+    <div class="mobile-menu mobile-version">
+      <img class="close-menu" src="images/menu-close.svg" alt="close Menu">
+      <ul class="mobile-menu-list">
+        <li><a href="#introduction" class="Hello mobile-menu-list-item">Hello</a></li>
+        <li><a href="#projects" class="portfolio mobile-menu-list-item">Portfolio</a></li>
+        <li><a href="#about" class="about mobile-menu-list-item">About</a></li>
+        <li><a href="#get-started" class="contact mobile-menu-list-item">Contact</a></li>
+      </ul>
+    </div>
     <nav class="default-navbar">
-      <a href="" class="mobile-menu mobile-version"><img src="images/ic_menu.svg" alt="Hamburger Menu"></a>
+      <img class="hamburger_btn mobile-version" src="images/ic_menu.svg" alt="Hamburger Menu">
       <ul class="desktop-menu desktop-version">
         <li><a href="#introduction" class="Hello">Hello</a></li>
         <li><a href="#projects" class="portfolio">Portfolio</a></li>
         <li><a href="#about" class="about">About</a></li>
         <li><a href="#get-started" class="contact">Contact</a></li>
-    </ul>
+      </ul>
     </nav>
   </header>
 
@@ -239,6 +249,7 @@
             <li><a href=""><img src="images/ic_medium.svg" alt="Medium"></a></li>
             <li><a href=""><img src="images/ic_angellist.svg" alt="Angellist"></a></li>
         </ul>    
-      </footer>  
+      </footer>
+      <script src="script.js"></script> 
 </body>
 </html>
