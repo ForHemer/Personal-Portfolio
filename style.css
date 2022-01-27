@@ -1245,12 +1245,6 @@ button {
     height: 558px;
   }
 
-  .project-division {
-    grid-column: 1 / 6;
-    display: flex;
-    flex-direction: column;
-  }
-
   .division-image {
     width: 100%;
   }
@@ -1319,8 +1313,10 @@ button {
 
   .division-1 {
     grid-column: 3 / 7;
-    margin-left: 0;
+    margin-left: 480px;
     height: 585px;
+    width: 70%;
+    position: absolute;
   }
 
   .division-1 .division-image {

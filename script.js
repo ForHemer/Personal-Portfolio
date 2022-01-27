@@ -42,8 +42,8 @@ const projectPop = [
     technologiesOne: 'HTML/CSS',
     technologiesTwo: 'Ruby on Rails',
     technologiesThree: 'JavaScript',
-    linkToLiveVersion: '',
-    linkToSource: '',
+    linkToLiveVersion: 'https://forhemer.github.io/Personal-Portfolio/',
+    linkToSource: 'https://github.com/ForHemer/Personal-Portfolio',
   },
   {
     id: 'division-2',
@@ -55,8 +55,8 @@ const projectPop = [
     technologiesOne: 'HTML/CSS',
     technologiesTwo: 'Ruby on Rails',
     technologiesThree: 'JavaScript',
-    linkToLiveVersion: '',
-    linkToSource: '',
+    linkToLiveVersion: 'https://forhemer.github.io/Personal-Portfolio/',
+    linkToSource: 'https://github.com/ForHemer/Personal-Portfolio',
   },
   {
     id: 'division-3',
@@ -68,8 +68,8 @@ const projectPop = [
     technologiesOne: 'HTML/CSS',
     technologiesTwo: 'Ruby on Rails',
     technologiesThree: 'JavaScript',
-    linkToLiveVersion: '',
-    linkToSource: '',
+    linkToLiveVersion: 'https://github.com/ForHemer/Personal-Portfolio',
+    linkToSource: 'https://forhemer.github.io/Personal-Portfolio/',
   },
   {
     id: 'division-4',
@@ -81,8 +81,8 @@ const projectPop = [
     technologiesOne: 'HTML/CSS',
     technologiesTwo: 'Ruby on Rails',
     technologiesThree: 'JavaScript',
-    linkToLiveVersion: '',
-    linkToSource: '',
+    linkToLiveVersion: 'https://forhemer.github.io/Personal-Portfolio/',
+    linkToSource: 'https://github.com/ForHemer/Personal-Portfolio',
   },
   {
     id: 'division-5',
@@ -94,8 +94,8 @@ const projectPop = [
     technologiesOne: 'HTML/CSS',
     technologiesTwo: 'Ruby on Rails',
     technologiesThree: 'JavaScript',
-    linkToLiveVersion: '',
-    linkToSource: '',
+    linkToLiveVersion: 'https://forhemer.github.io/Personal-Portfolio/',
+    linkToSource: 'https://github.com/ForHemer/Personal-Portfolio',
   },
   {
     id: 'division-6',
@@ -107,8 +107,8 @@ const projectPop = [
     technologiesOne: 'HTML/CSS',
     technologiesTwo: 'Ruby on Rails',
     technologiesThree: 'JavaScript',
-    linkToLiveVersion: '',
-    linkToSource: '',
+    linkToLiveVersion: 'https://forhemer.github.io/Personal-Portfolio/',
+    linkToSource: 'https://github.com/ForHemer/Personal-Portfolio',
   },
 ];
 
@@ -140,10 +140,31 @@ closeBtn.addEventListener('click', () => {
   miniImageCountainer.innerHTML = '';
 });
 
-const projectLinks = document.querySelectorAll('.project-view-button');
-projectLinks.forEach((btn, index) => {
-  btn.addEventListener('click', () => {
-    projectPopup.style.display = 'flex';
+/* ==========Generate each project========== */
+const projContainer  = document.querySelector('#projects');
+projectPop.forEach((project) => {
+  const container = document.createElement('div');
+  container.classList.add('project-division',project.id)
+  container.innerHTML=`
+    <img class="${project.imageclass}" src="${project.featuredImage}" alt="laptops" />
+    <div class="project-content">
+        <h3 class="project-name">${project.name}</h3>
+        <ul class="language-info">
+          <li class="html-css project_language">${project.technologiesOne}</li>
+          <li class="ruby project_language">${project.technologiesTwo}</li>
+          <li class="javascript project_language">${project.technologiesThree}</li>
+        </ul>
+        <button type="button" class="project-view-button" id="${project.index}">
+          See this Project <i class="fa fa-arrow-right"></i>
+        </button>
+      </div>
+    </div> 
+  `;
+  projContainer.appendChild(container);  
+});
+
+function popupLakay (index) {
+  projectPopup.style.display = 'flex';
     closeBtn.style.display = 'block';
 
     // create content
@@ -197,5 +218,4 @@ projectLinks.forEach((btn, index) => {
     projectPopup.append(closeBtn, projectName, list, imageContainer, description, buttonContainer);
 
     document.body.appendChild(projectPopup);
-  });
-});
+}
