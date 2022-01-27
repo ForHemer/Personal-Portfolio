@@ -199,27 +199,3 @@ projectLinks.forEach((btn, index) => {
     document.body.appendChild(projectPopup);
   });
 });
-
-/* ==========Generate each project========== */
-const projContainer  = document.querySelector('#projects');
-projectPop.forEach((project) => {
-  const container = document.createElement('div');
-  container.innerHTML=`
-  <div class="project-division ${project.id}">
-    <img class="${project.imageclass}" src="${project.featuredImage}" alt="laptops" />
-    <div class="project-content">
-        <h3 class="project-name">${project.name}</h3>
-        <ul class="language-info">
-          <li class="html-css project_language">${project.technologiesOne}</li>
-          <li class="ruby project_language">${project.technologiesTwo}</li>
-          <li class="javascript project_language">${project.technologiesThree}</li>
-        </ul>
-        <button type="button" class="project-view-button">
-          See this Project <i class="fa fa-arrow-right"></i>
-        </button>
-      </div>
-    </div>
-  </div>
-  `;
-  projContainer.appendChild(container);  
-});
