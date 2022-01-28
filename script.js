@@ -220,7 +220,7 @@ function popupLakay(index) {
   document.body.appendChild(projectPopup);
 }
 
-document.querySelector('#projects').addEventListener('click', e => {
+document.querySelector('#projects').addEventListener('click', (e) => {
   if (e.target.classList.contains('project-view-button')) {
     popupLakay(e.target.id);
   }
