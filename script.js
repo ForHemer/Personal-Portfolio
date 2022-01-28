@@ -144,7 +144,7 @@ closeBtn.addEventListener('click', () => {
 const projContainer = document.querySelector('#projects');
 projectPop.forEach((project) => {
   const container = document.createElement('div');
-  container.classList.add('project-division', project.id)
+  container.classList.add('project-division', project.id);
   container.innerHTML = `
     <img class="${project.imageclass}" src="${project.featuredImage}" alt="laptops" />
     <div class="project-content">
@@ -224,4 +224,4 @@ document.querySelector('#projects').addEventListener('click', e => {
   if (e.target.classList.contains('project-view-button')) {
     popupLakay(e.target.id);
   }
-})
+});
