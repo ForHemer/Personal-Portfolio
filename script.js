@@ -239,12 +239,14 @@ function validateEmail(email) {
   return false;
 }
 
-form.addEventListener('submit-form', (e) => {
-  if (!validateEmail(email.value)) {
-    errorMessage.innerHTML = '(*) Your email address should be in lower case';
-    // alert()
-    e.preventDefault();
-  } else {
-    form.submit();
+form.addEventListener('click', (e) => {
+  if (e.target.classList.contains('submit-form')) {
+    if (!validateEmail(email.value)) {
+      errorMessage.innerHTML = '(*) Your email address should be in lower case';
+     
+      e.preventDefault();
+    } else {
+      form.submit();
+    }
   }
 });
