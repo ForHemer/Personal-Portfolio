@@ -242,8 +242,7 @@ function validateEmail(email) {
 form.addEventListener('click', (e) => {
   if (e.target.classList.contains('submit-form')) {
     if (!validateEmail(email.value)) {
-      errorMessage.innerHTML = '(*) Your email address should be in lower case';
-     
+      errorMessage.innerHTML = '(*) Your email address should be in lower case';     
       e.preventDefault();
     } else {
       form.submit();
