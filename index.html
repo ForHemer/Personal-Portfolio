@@ -139,12 +139,15 @@
       <p class="get-started-content">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.
       </p>
-      <form action="https://formspree.io/f/mlezegyq" method="POST">
+      <form id="form" action="https://formspree.io/f/mlezegyq" method="POST">
         <div class="inputs">
-          <input type="text" id="name" name="user_name" maxlength="30" placeholder="Your name" required/>
-          <input type="email" id="email" name="user_email" placeholder="Your email" required/>
+          <input class="iname" type="text" id="name" name="user_name" maxlength="30" placeholder="Your name" required/>
+          <input class="iemail" type="email" id="email" name="user_email" placeholder="Your email" required/>
         </div>          
           <textarea id="msg" name="user_message" maxlength="500" placeholder="Enter your message here..." required></textarea>
+          <div class="error-msg">
+              <p id="email-error-message"></p>
+            </div>
           <button class="submit-form start-collaboration" type="submit">Start collaboration</button>
       </form>
     </div>
@@ -161,6 +164,6 @@
             <li><a href=""><img src="images/ic_angellist.svg" alt="Angellist"></a></li>
         </ul>    
       </footer>
-      <script src="script.js"></script> 
+      <script src="script.js"></script>
 </body>
 </html>

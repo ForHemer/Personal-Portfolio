@@ -225,3 +225,27 @@ document.querySelector('#projects').addEventListener('click', (e) => {
     popupLakay(e.target.id);
   }
 });
+
+/* ==========Contact Form Validation========== */
+const form = document.querySelector('#form');
+const email = document.getElementById('email');
+const errorMessage = document.getElementById('email-error-message');
+
+function validateEmail(email) {
+  const regEx = /^[_a-z0-9-]+(\.[_a-z0-9-]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,4})$/;
+  if (regEx.test(email)) {
+    return true;
+  }
+  return false;
+}
+
+form.addEventListener('click', (e) => {
+  if (e.target.classList.contains('submit-form')) {
+    if (!validateEmail(email.value)) {
+      errorMessage.innerHTML = '(*) Your email address should be in lower case';
+      e.preventDefault();
+    } else {
+      form.submit();
+    }
+  }
+});

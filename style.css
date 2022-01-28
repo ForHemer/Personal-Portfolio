@@ -564,7 +564,7 @@ button {
     letter-spacing: -0.01em;
   }
 
-  #get-started .container > form {
+  #form {
     display: grid;
     gap: 8px;
   }
@@ -604,6 +604,12 @@ button {
     background-color: #fff;
     border-radius: 4px;
     resize: none;
+  }
+
+  #email-error-message {
+    color: red;
+    margin: 5px 18px 0 18px;
+    text-align: center;
   }
 
   .submit-form {
@@ -996,7 +1002,7 @@ button {
     letter-spacing: -0.01em;
   }
 
-  #get-started .container > form {
+  #form {
     display: grid;
     gap: 8px;
   }
@@ -1036,6 +1042,12 @@ button {
     background-color: #fff;
     border-radius: 4px;
     resize: none;
+  }
+
+  #email-error-message {
+    color: red;
+    margin: 5px 18px 0 18px;
+    text-align: center;
   }
 
   .submit-form {
@@ -1649,7 +1661,7 @@ button {
     letter-spacing: -1px;
   }
 
-  #get-started .container > form {
+  #form {
     margin-top: 32px;
     display: flex;
     flex-direction: column;
@@ -1689,6 +1701,11 @@ button {
     background-color: #fff;
     border-radius: 4px;
     resize: none;
+  }
+
+  #email-error-message {
+    color: red;
+    text-align: center;
   }
 
   /* ==End of Get started section== */
